@@ -1,16 +1,40 @@
 import React from 'react';
 import './App.css';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import GalleryList from './GalleryList/GalleryList';
+
 
 function App() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Gallery of My Life</h1>
-        </header>
-        <p>Gallery goes here</p>
-        <img src="images/goat_small.jpg"/>
-      </div>
-    );
+
+  const [galleryList, setGalleryList] = useState([]);
+
+  useEffect(() => {
+    fetchGallery()
+  }, [])
+
+  //getting request from server to get Gallery Items
+  const fetchGallery = () => {
+    axios.get('/gallery')
+      .then((response) => {
+        console.log(response);
+        console.log(response.data);
+        setGalleryList(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+  }
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1 className="App-title">My Feed</h1>
+      </header>
+      <GalleryList list={galleryList} />
+
+    </div>
+  );
 }
 
 export default App;
