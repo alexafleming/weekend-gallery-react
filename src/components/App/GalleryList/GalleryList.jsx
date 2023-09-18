@@ -6,7 +6,7 @@ function GalleryList(props) {
         <div>
             {props.list.map(imageItem => (
                 <>
-                    <GalleryItem image={imageItem} />
+                    <GalleryItem image={imageItem} fetchGallery={props.fetchGallery} />
                 </>
             ))}
         </div>

@@ -31,7 +31,7 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">My Feed</h1>
       </header>
-      <GalleryList list={galleryList} />
+      <GalleryList list={galleryList} fetchGallery={fetchGallery} />
 
     </div>
   );
