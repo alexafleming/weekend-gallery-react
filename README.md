@@ -9,7 +9,7 @@ Weekend Gallery is a vibrant web app for photo enthusiasts. Upload and showcase 
 ---
 # Design
 
-I designed Weekend Gallery with the familiar and engaging vibe of Instagram. The user-friendly interface and interactive features make liking and appreciating visual content a seamless and enjoyable experience
+I designed Weekend Gallery with the familiar and engaging vibe of Instagram. The user-friendly interface and interactive features make hearting and appreciating visual content a seamless and enjoyable experience
 
 --- 
 # Setup and Installation
