@@ -19,3 +19,6 @@ I designed Weekend Gallery with the familiar and engaging vibe of Instagram. The
 - In a separate terminal tab, run `npm run client` to launch the React app
 
 ---
+# Built with
+
+![Weekend Gallery Technologies](https://github.com/alexafleming/weekend-gallery-react/assets/111538729/6ba12fd5-26a6-46b8-a48b-c56203d03d5a)
